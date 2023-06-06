@@ -74,7 +74,7 @@ header p{
   margin-top: -0.8rem;
 }
 
-/* SEARCH INTRO */
+/* SEARCH CONTAIN */
 
 .search-contain{
   padding: 2rem 3rem 0rem 3rem;
@@ -94,7 +94,7 @@ header p{
 
 .search-term {
   width: 100%;
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   border-right: none;
   padding: 1rem;
   border-radius: 5px 0 0 5px;
@@ -104,7 +104,7 @@ header p{
 }
 
 .search-contain button{
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   border-left: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
@@ -114,4 +114,35 @@ header p{
 
 .search-contain p:last-of-type{
  margin-top: -0.1rem;
+}
+
+/* FILTER CONTAIN */
+
+.filter-contain{
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.filter-contain div{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-contain button:first-of-type{
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 1rem 0.8rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-contain button{
+  background-color: white;
+  color: var(--primary);
+  padding: 1rem 1rem 0.8rem 1rem;
+  border-radius: 5px;
+  border: solid 1px var(--primary);
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
 }
