@@ -30,11 +30,20 @@ h2{
 }
 
 h3{
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  color: var(--primary);
+}
+
+h4{
+  font-size: 1.3rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+h5{
+  font-size: 1rem;
   color: var(--primary-font-color);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 p{
@@ -130,7 +139,7 @@ header p{
 .filter-contain button:first-of-type{
   background-color: var(--primary);
   color: white;
-  padding: 1rem 1rem 0.8rem 1rem;
+  padding: 0.8rem 1rem 0.5rem 1rem;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -139,10 +148,241 @@ header p{
 .filter-contain button{
   background-color: white;
   color: var(--primary);
-  padding: 1rem 1rem 0.8rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 5px;
   border: solid 1px var(--primary);
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
+}
+
+.filter-contain-desktop{
+  display: none;
+}
+
+/* BLOG CONTAIN */
+
+.blog-contain{
+  padding: 3rem;
+}
+
+.blog-post{
+  height: 100%;
+  position: relative;
+}
+
+.blog-post:hover{
+  padding-left: 2rem;
+  transition: 0.4s;
+}
+
+.blog-post:before{
+  background: #cac8c8;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+.publish-date-text{
+  font-weight: 500;
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.blog-post h4{
+  margin-top: -0.8rem;
+  padding-left: 2rem;
+}
+
+.blog-post ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.blog-post li{
+  font-weight: 300;
+  margin-top: -1rem;
+  padding-left: 2rem;
+}
+
+/* JOIN US CONTAIN  */
+
+.join-us-contain{
+  background-color: var(--secondary);
+  padding: 3rem;
+  text-align: center;
+}
+
+.join-us-contain button{
+  margin-top: 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 1rem 0.8rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.join-us-contain button:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* BREAKPOINTS */
+
+@media (min-width:50rem){
+
+  h1{
+    font-size: 3rem;
+  }
+
+  h2{
+    font-size: 1.8rem;
+  }
+
+  .search-contain{
+    padding: 2rem 8rem 0rem 8rem;
+  }
+
+  .filter-contain{
+    padding: 1rem 8rem 3rem 8rem;
+  }
+
+  .blog-contain{
+    padding: 0rem 8rem 1rem 8rem;
+  }
+  
+}
+
+@media (min-width:70rem){
+
+  header{
+    padding: 1rem 10rem 0rem 10rem;
+  }
+
+  .intro-contain{
+    padding: 1rem 10rem 1rem 10rem;
+  }
+
+  .search-contain{
+    padding: 2rem 15rem 0rem 15rem;
+  }
+
+  .filter-contain{
+    padding: 1rem 15rem 3rem 15rem;
+  }
+
+  .blog-contain{
+    padding: 0rem 15rem 3rem 15rem;
+  }
+
+  .join-us-contain{
+    padding: 3rem 10rem 3rem 10rem;
+  }
+  
+}
+
+@media (min-width:80rem){
+
+  header{
+    padding: 1rem 13rem 0rem 13rem;
+  }
+
+  .intro-contain{
+    padding: 1rem 13rem 1rem 13rem;
+  }
+
+  .search-contain{
+    padding: 2rem 25rem 0rem 25rem;
+  }
+
+  .filter-contain{
+    display: none;
+  }
+
+  .filter-blog-contain-wrapper{
+    padding: 4rem 13rem 5rem 13rem;
+    display: flex;
+  }
+
+  .filter-contain-desktop{
+    display: block;
+    width: 25%;
+    margin-right: 10rem;
+  }
+
+  .filter-contain-desktop button{
+    background-color: white;
+    color: var(--primary);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 5px;
+    border: solid 1px var(--primary);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin: 0rem 0.3rem 0.5rem 0rem
+  }
+
+  .filter-contain-desktop button:hover{
+    background-color: var(--primary);
+    color: white;
+    transition: 0.4s;
+  }
+
+  .filter-authors{
+    width: min-content;
+  }
+
+  .filter-authors input[type=checkbox] {
+    display: none;
+  }
+
+  .filter-authors input[type=checkbox] + label:before {
+    content: " ";
+    display: inline-block;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: solid 1px var(--primary);
+    cursor: pointer;
+    margin-right: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .filter-authors input[type=checkbox] + label:active:before {
+    transform: scale(0);
+    transition: 0.4s;
+  }
+
+  .filter-authors input[type=checkbox]:checked + label:before {
+    background-color: var(--primary);
+  }
+
+  .author-name-text{
+    margin-left: 3rem;
+  }
+
+  .blog-contain{
+    padding: 0;
+    margin-bottom: 10rem;
+  }
+
+  .blog-post{
+    height: 4%
+  }
+
+  .join-us-contain{
+    padding: 3rem 30rem 3rem 30rem;
+  }
+
+  .join-us-contain p{
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+  }
+  
 }

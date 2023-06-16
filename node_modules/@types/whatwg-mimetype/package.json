@@ -1,0 +1,30 @@
+{
+    "name": "@types/whatwg-mimetype",
+    "version": "3.0.0",
+    "description": "TypeScript definitions for whatwg-mimetype",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/whatwg-mimetype",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Pete Johanson",
+            "url": "https://github.com/petejohanson",
+            "githubUsername": "petejohanson"
+        },
+        {
+            "name": "BendingBender",
+            "url": "https://github.com/BendingBender",
+            "githubUsername": "BendingBender"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/whatwg-mimetype"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "59cd2183f982ae39f9a5d24c225c022a64bcae704d28ddbc1b1b4e4bf86a5ff3",
+    "typeScriptVersion": "4.1"
+}
