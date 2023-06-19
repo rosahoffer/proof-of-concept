@@ -8,17 +8,20 @@
 
     <section class="search-contain">
         <p>Search blogs</p>
-            <form action="/" method="GET" class="search-bar">
-                <input type="text" name="searchTerm" class="search-term" placeholder="Search blogs...">
-                <button type="submit">
-                    <svg width="33" height="30" viewBox="0 0 33 30">
-                        <path d="M32.087 20.1807L29.196 17.2907C29.9886 16.1549 30.4569 14.777 30.4569 13.288C30.4569 9.4193 27.3208 6.28314 23.4521 6.28314C19.5834 6.28314 16.4473 9.4193 16.4473 13.288C16.4473 17.1566 19.5834 20.2928 23.4521 20.2928C24.9411 20.2928 26.3191 19.8244 27.4548 19.0319L30.3448 21.9219C30.8261 22.4032 31.6057 22.4032 32.087 21.9219C32.5673 21.4415 32.5673 20.662 32.087 20.1807ZM23.4521 18.2914C20.6892 18.2914 18.4487 16.0509 18.4487 13.288C18.4487 10.5251 20.6892 8.28453 23.4521 8.28453C26.215 8.28453 28.4555 10.5251 28.4555 13.288C28.4555 16.0509 26.215 18.2914 23.4521 18.2914Z" fill="#1400FF"/>
-                        <line x1="1.42767" y1="0.0740967" x2="1.42767" y2="29.6852" stroke="#888888"/>
-                    </svg>
-                </button>
-            </form>
+        <form action="/" method="GET" class="search-bar" id="search-bar">
+          <input type="search" name="searchTerm" id="search-term" placeholder="Search blogs..." list="title-list" autocomplete="off">
+          <datalist id="title-list"></datalist>
+          <button type="submit">
+            <svg width="33" height="30" viewBox="0 0 33 30">
+              <path d="M32.087 20.1807L29.196 17.2907C29.9886 16.1549 30.4569 14.777 30.4569 13.288C30.4569 9.4193 27.3208 6.28314 23.4521 6.28314C19.5834 6.28314 16.4473 9.4193 16.4473 13.288C16.4473 17.1566 19.5834 20.2928 23.4521 20.2928C24.9411 20.2928 26.3191 19.8244 27.4548 19.0319L30.3448 21.9219C30.8261 22.4032 31.6057 22.4032 32.087 21.9219C32.5673 21.4415 32.5673 20.662 32.087 20.1807ZM23.4521 18.2914C20.6892 18.2914 18.4487 16.0509 18.4487 13.288C18.4487 10.5251 20.6892 8.28453 23.4521 8.28453C26.215 8.28453 28.4555 10.5251 28.4555 13.288C28.4555 16.0509 26.215 18.2914 23.4521 18.2914Z" fill="#1400FF"/>
+              <line x1="1.42767" y1="0.0740967" x2="1.42767" y2="29.6852" stroke="#888888"/>
+            </svg>
+          </button>
+        </form>
         <p>34 Blogs by 7 Authors</p>
-    </section>
+      </section>
+      
+    
     <section class="filter-contain">
         <div>
             <button>
@@ -56,10 +59,11 @@
             </div>
             <div class="filter-authors">
                 <h5>Author(s)</h5>
-                <input type="checkbox" name="Author" value="Vera" id="Vera"><label for="Vera">Vera</label>
-                <input type="checkbox" name="Author" value="Jasper" id="Jasper"><label for="Jasper">Jasper</label>
-                <input type="checkbox" name="Author" value="Declan" id="Declan"><label for="Declan">Declan</label>
-                <input type="checkbox" name="Author" value="Victor" id="Victor"><label for="Victor">Victor</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="Vera" id="Vera"><label for="Vera">Vera</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="Jasper" id="Jasper"><label for="Jasper">Jasper</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="Declan" id="Declan"><label for="Declan">Declan</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="Victor" id="Victor"><label for="Victor">Victor</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="340346" id="Joao"><label for="Joao">Joao</label>
             </div>
 
             <h5>Reading Time</h5> 
@@ -101,3 +105,5 @@
 </main>
 
 <%- include('./partials/foot') %>
+
+
