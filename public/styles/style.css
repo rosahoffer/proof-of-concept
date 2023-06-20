@@ -95,24 +95,22 @@ header p{
   font-weight: 400;
 }
 
-.search-bar{
-  margin-top: -0.5rem;
-  width: 100%;
+.search-bar-container {
   display: flex;
+  width: 100%;
 }
 
-.search-term {
+.search-bar-container input[type="search"] {
   width: 100%;
-  border: 1px solid var(--primary);
-  border-right: none;
   padding: 1rem;
+  border: solid 1px var(--primary);
+  border-right: none;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: var(--primary-font-color);
   font-family: 'Inter', sans-serif;
 }
 
-.search-contain button{
+.search-bar-container button{
   border: 1px solid var(--primary);
   border-left: none;
   border-radius: 0 5px 5px 0;
@@ -125,23 +123,28 @@ header p{
  margin-top: -0.1rem;
 }
 
-#title-list {
-  background-color: #ffffff; /* Achtergrondkleur */
-  color: #000000; /* Tekstkleur */
-  border: 1px solid #cccccc; /* Rand */
-  padding: 5px; /* Ruimte binnenin */
-  max-height: 200px; /* Maximale hoogte */
-  overflow-y: auto; /* Scrollen als de inhoud te groot is */
+/* AUTOCOMPLETE  */
+
+.autocomplete-options {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.1rem;
+  border: 1px solid var(--primary);
+  border-radius: 5px 5px;
+  max-height: 10rem;
+  overflow-y: auto;
 }
 
-#title-list option {
-  padding: 5px; /* Ruimte binnenin elke optie */
+.autocomplete-options li {
+  padding: 1.5rem;
+  cursor: pointer;
+  color: var(--primary);
+  border-bottom: 1px solid #ECECEC;
 }
 
-#title-list option:hover {
-  background-color: #f2f2f2; /* Achtergrondkleur bij hover */
+.autocomplete-options li:hover {
+  background-color: #ECECEC;
 }
-
 
 /* FILTER CONTAIN */
 
@@ -353,7 +356,7 @@ header p{
   }
 
   .filter-authors{
-    width: min-content;
+    width: min-content
   }
 
   .filter-authors input[type=checkbox] {
