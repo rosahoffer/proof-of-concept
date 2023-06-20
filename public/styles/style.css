@@ -188,7 +188,6 @@ header p{
 }
 
 .blog-post{
-  height: 100%;
   position: relative;
 }
 
@@ -391,10 +390,6 @@ header p{
   .blog-contain{
     padding: 0;
     margin-bottom: 10rem;
-  }
-
-  .blog-post{
-    height: 4%
   }
 
   .join-us-contain{
