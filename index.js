@@ -28,6 +28,7 @@ app.get('/', async function (req, res) {
         authors: { eq: $authorId }
       }, orderBy: $orderBy) {
         title
+        slug
         publishDate
         authors {
           id
@@ -48,6 +49,7 @@ app.get('/', async function (req, res) {
         title: { matches: { pattern: $pattern } }
       }, orderBy: $orderBy) {
         title
+        slug
         publishDate
         authors {
           id
@@ -76,9 +78,8 @@ app.get('/', async function (req, res) {
       variables,
     }),
   });
-
   const data = await response.json();
-  const allTitles = data.data.allBlogPosts.map(post => post.title)
+  const allTitles = data.data.allBlogPosts.map(post => { return {title:  post.title, slug: post.slug} })
   res.render('index', {data, allTitles});
 });
 
