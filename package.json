@@ -30,7 +30,6 @@
     "@apollo/sandbox": "^2.4.0",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
-    "express": "^4.18.2",
-    "node-fetch": "^3.3.1"
+    "express": "^4.18.2"
   }
 }

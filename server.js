@@ -1,6 +1,8 @@
 // Importeer express en node-fetch
+import * as dotenv from 'dotenv';
 import express from 'express';
-import fetch from 'node-fetch';
+
+dotenv.config()
 
 // Maak een nieuwe express app aan
 const app = express();
@@ -67,11 +69,14 @@ app.get('/', async function (req, res) {
   console.log(query);
   console.log(variables);
 
-  const response = await fetch('https://graphql.datocms.com/', {
+  
+  const url = process.env.API_URL;
+  const key = process.env.API_KEY;
+  const response = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'Bearer 10a0ae10c2d6418c1acd4346de9329',
+      Authorization: (key)
     },
     body: JSON.stringify({
       query,
