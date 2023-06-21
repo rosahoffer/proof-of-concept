@@ -12,7 +12,7 @@
         <p>Search blogs</p>
         <form action="/" method="GET" class="search-term" id="search-bar">
             <div class="search-bar-container">
-              <input type="search" name="searchTerm" id="search-term" placeholder="Search blogs..." autocomplete="off">
+              <input type="search" name="searchTerm" id="search-term" placeholder="Search blogs..." list="title-list" autocomplete="off">
                 <button type="submit">
                     <svg width="33" height="30" viewBox="0 0 33 30">
                     <path d="M32.087 20.1807L29.196 17.2907C29.9886 16.1549 30.4569 14.777 30.4569 13.288C30.4569 9.4193 27.3208 6.28314 23.4521 6.28314C19.5834 6.28314 16.4473 9.4193 16.4473 13.288C16.4473 17.1566 19.5834 20.2928 23.4521 20.2928C24.9411 20.2928 26.3191 19.8244 27.4548 19.0319L30.3448 21.9219C30.8261 22.4032 31.6057 22.4032 32.087 21.9219C32.5673 21.4415 32.5673 20.662 32.087 20.1807ZM23.4521 18.2914C20.6892 18.2914 18.4487 16.0509 18.4487 13.288C18.4487 10.5251 20.6892 8.28453 23.4521 8.28453C26.215 8.28453 28.4555 10.5251 28.4555 13.288C28.4555 16.0509 26.215 18.2914 23.4521 18.2914Z" fill="#1400FF"/>
@@ -29,7 +29,7 @@
     
     <section class="filter-contain">
         <div>
-            <button>
+            <button onclick="ShowAndHide()">
                 <svg width="68" height="16" viewBox="0 0 68 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.0114 13V1.36364H35.7159V3.39205H30.4716V6.16477H35.2045V8.19318H30.4716V13H28.0114ZM37.3253 13V4.27273H39.7457V13H37.3253ZM38.5412 3.14773C38.1813 3.14773 37.8726 3.02841 37.6151 2.78977C37.3613 2.54735 37.2344 2.25758 37.2344 1.92045C37.2344 1.58712 37.3613 1.30114 37.6151 1.0625C37.8726 0.820075 38.1813 0.698863 38.5412 0.698863C38.901 0.698863 39.2079 0.820075 39.4616 1.0625C39.7192 1.30114 39.848 1.58712 39.848 1.92045C39.848 2.25758 39.7192 2.54735 39.4616 2.78977C39.2079 3.02841 38.901 3.14773 38.5412 3.14773ZM44.1051 1.36364V13H41.6847V1.36364H44.1051ZM50.6861 4.27273V6.09091H45.4304V4.27273H50.6861ZM46.6236 2.18182H49.044V10.3182C49.044 10.5417 49.0781 10.7159 49.1463 10.8409C49.2145 10.9621 49.3092 11.0473 49.4304 11.0966C49.5554 11.1458 49.6993 11.1705 49.8622 11.1705C49.9759 11.1705 50.0895 11.161 50.2031 11.142C50.3168 11.1193 50.4039 11.1023 50.4645 11.0909L50.8452 12.892C50.724 12.9299 50.5535 12.9735 50.3338 13.0227C50.1141 13.0758 49.8471 13.108 49.5327 13.1193C48.9493 13.142 48.438 13.0644 47.9986 12.8864C47.563 12.7083 47.224 12.4318 46.9815 12.0568C46.7391 11.6818 46.6198 11.2083 46.6236 10.6364V2.18182ZM56.1463 13.1705C55.2486 13.1705 54.4759 12.9886 53.8281 12.625C53.1842 12.2576 52.688 11.7386 52.3395 11.0682C51.991 10.3939 51.8168 9.59659 51.8168 8.67614C51.8168 7.77841 51.991 6.99053 52.3395 6.3125C52.688 5.63447 53.1785 5.10606 53.8111 4.72727C54.4474 4.34848 55.1937 4.15909 56.0497 4.15909C56.6255 4.15909 57.1615 4.25189 57.6577 4.4375C58.1577 4.61932 58.5933 4.89394 58.9645 5.26136C59.3395 5.62879 59.6312 6.09091 59.8395 6.64773C60.0478 7.20076 60.152 7.84848 60.152 8.59091V9.25568H52.7827V7.75568H57.8736C57.8736 7.4072 57.7978 7.09848 57.6463 6.82955C57.4948 6.56061 57.2846 6.35038 57.0156 6.19886C56.7505 6.04356 56.4418 5.96591 56.0895 5.96591C55.7221 5.96591 55.3963 6.05114 55.1122 6.22159C54.8319 6.38826 54.6122 6.61364 54.4531 6.89773C54.294 7.17803 54.2126 7.49053 54.2088 7.83523V9.26136C54.2088 9.69318 54.2884 10.0663 54.4474 10.3807C54.6103 10.6951 54.8395 10.9375 55.1349 11.108C55.4304 11.2784 55.7808 11.3636 56.1861 11.3636C56.455 11.3636 56.7012 11.3258 56.9247 11.25C57.1482 11.1742 57.3395 11.0606 57.4986 10.9091C57.6577 10.7576 57.7789 10.572 57.8622 10.3523L60.1009 10.5C59.9872 11.0379 59.7543 11.5076 59.402 11.9091C59.0535 12.3068 58.6027 12.6174 58.0497 12.8409C57.5005 13.0606 56.866 13.1705 56.1463 13.1705ZM61.7315 13V4.27273H64.0781V5.79545H64.169C64.3281 5.25379 64.5952 4.8447 64.9702 4.56818C65.3452 4.28788 65.777 4.14773 66.2656 4.14773C66.3868 4.14773 66.5175 4.1553 66.6577 4.17045C66.7978 4.18561 66.9209 4.20644 67.027 4.23295V6.38068C66.9134 6.34659 66.7562 6.31629 66.5554 6.28977C66.3546 6.26326 66.1709 6.25 66.0043 6.25C65.6482 6.25 65.33 6.32765 65.0497 6.48295C64.7732 6.63447 64.5535 6.84659 64.3906 7.11932C64.2315 7.39205 64.152 7.70644 64.152 8.0625V13H61.7315Z" fill="white"/>
                 <g clip-path="url(#clip0_0_1)">
@@ -51,7 +51,13 @@
     </section>
 
     <section class="filter-blog-contain-wrapper">
-        <section class="filter-contain-desktop">
+        <section class="filter-contain-desktop" id="filter-contain-desktop" style="display:none">
+            <button id="filter-close-button" onclick="ShowAndHide()">
+                <svg width="15" height="15" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L11 1" stroke="#0000FF" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M1 1L11 11" stroke="#0000FF" stroke-width="2" stroke-linecap="round"/>
+                    </svg>                    
+            </button>
             <h4>Filters</h4>
             <h5>Related Topics</h5>
             <div class="filter-buttons">
@@ -64,16 +70,14 @@
             </div>
             <div class="filter-authors">
                 <h5>Author(s)</h5>
-                <input type="checkbox" form="search-bar" name="authorId" value="Vera" id="Vera"><label for="Vera">Vera</label>
-                <input type="checkbox" form="search-bar" name="authorId" value="Jasper" id="Jasper"><label for="Jasper">Jasper</label>
-                <input type="checkbox" form="search-bar" name="authorId" value="Declan" id="Declan"><label for="Declan">Declan</label>
-                <input type="checkbox" form="search-bar" name="authorId" value="Victor" id="Victor"><label for="Victor">Victor</label>
-                <input type="checkbox" form="search-bar" name="authorId" value="340346" id="Joao"><label for="Joao">Joao</label>
-                <input type="checkbox" form="search-bar" name="authorId" value="Victor" id="Tjerk"><label for="Tjerk">Tjerk</label>
-                <input type="checkbox" form="search-bar" name="authorId" value="340346" id="Maarten"><label for="Maarten">Maarten</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="122738219" id="Vera"><label for="Vera">Vera</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="340340" id="Jasper"><label for="Jasper">Jasper</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="340344" id="Declan"><label for="Declan">Declan</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="4585143" id="Sjoerd"><label for="Sjoerd">Sjoerd</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="147119401" id="Misha"><label for="Misha">Misha</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="145051580" id="Zowie"><label for="Zowie">Zowie</label>
+                <input type="checkbox" form="search-bar" name="authorId" value="787009" id="James"><label for="James">James</label>
             </div>
-
-            <h5>Reading Time</h5> 
         </section>
 
         <section class="blog-contain">

@@ -17,7 +17,7 @@ app.get('/', async function (req, res) {
   let query = '';
   let variables = {};
   variables.pattern = req.query.searchTerm || '';
-  variables.orderBy = req.query.orderBy || 'publishDate_ASC';
+  variables.orderBy = req.query.orderBy || 'publishDate_DESC';
 
   if (req.query.authorId) {
     variables.authorId = req.query.authorId;

@@ -131,7 +131,7 @@ header p{
   margin-top: 0.1rem;
   border: 1px solid var(--primary);
   border-radius: 5px 5px;
-  max-height: 10rem;
+  max-height: 11rem;
   overflow-y: auto;
 }
 
@@ -188,7 +188,67 @@ header p{
 }
 
 .filter-contain-desktop{
+  position: relative;
+  background-color: var(--secondary);
+  padding: 2rem 3rem 3rem 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  margin-right: 10rem;
+}
+
+.filter-contain-desktop button{
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 5px;
+  border: solid 1px var(--primary);
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin: 0rem 0.3rem 0.5rem 0rem
+}
+
+.filter-contain-desktop button:hover{
+  background-color: var(--primary);
+  color:var(--secondary);
+  transition: 0.4s;
+}
+
+#filter-close-button{
+  position: absolute;
+  top: 11%;
+  right: 10%;
+  border: none;
+  padding: 0;
+}
+
+.filter-authors{
+  width: min-content
+}
+
+.filter-authors input[type=checkbox] {
   display: none;
+}
+
+.filter-authors input[type=checkbox] + label:before {
+  content: " ";
+  display: inline-block;
+  background-color: var(--secondary);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: solid 1px var(--primary);
+  cursor: pointer;
+  margin-right: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.filter-authors input[type=checkbox] + label:active:before {
+  transform: scale(0);
+  transition: 0.4s;
+}
+
+.filter-authors input[type=checkbox]:checked + label:before {
+  background-color: var(--primary);
 }
 
 /* BLOG CONTAIN */
@@ -283,6 +343,10 @@ header p{
     padding: 1rem 8rem 3rem 8rem;
   }
 
+  .filter-contain-desktop{
+    padding-left: 8rem;
+  }
+
   .blog-contain{
     padding: 0rem 8rem 1rem 8rem;
   }
@@ -305,6 +369,10 @@ header p{
 
   .filter-contain{
     padding: 1rem 15rem 3rem 15rem;
+  }
+
+  .filter-contain-desktop{
+    padding-left: 15rem;
   }
 
   .blog-contain{
@@ -341,65 +409,32 @@ header p{
   }
 
   .filter-contain-desktop{
-    display: block;
+    background-color: white;
+    display: block !important;
+    padding: 0;
     width: 25%;
     margin-right: 10rem;
   }
-
+  
   .filter-contain-desktop button{
     background-color: white;
-    color: var(--primary);
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 5px;
-    border: solid 1px var(--primary);
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    margin: 0rem 0.3rem 0.5rem 0rem
   }
-
+  
   .filter-contain-desktop button:hover{
-    background-color: var(--primary);
     color: white;
-    transition: 0.4s;
   }
 
-  .filter-authors{
-    width: min-content
-  }
-
-  .filter-authors input[type=checkbox] {
+  #filter-close-button{
     display: none;
   }
 
   .filter-authors input[type=checkbox] + label:before {
-    content: " ";
-    display: inline-block;
     background-color: white;
-    padding: 0.5rem;
-    border-radius: 5px;
-    border: solid 1px var(--primary);
-    cursor: pointer;
-    margin-right: 0.4rem;
-    margin-top: 0.5rem;
-  }
-
-  .filter-authors input[type=checkbox] + label:active:before {
-    transform: scale(0);
-    transition: 0.4s;
-  }
-
-  .filter-authors input[type=checkbox]:checked + label:before {
-    background-color: var(--primary);
-  }
-
-  .author-name-text{
-    margin-left: 3rem;
   }
 
   .blog-contain{
     padding: 0;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 
   .join-us-contain{
