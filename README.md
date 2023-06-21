@@ -1,5 +1,3 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
 # De Voorhoede - Blogpage
 Een blog-overzicht voor [De Voorhoede](https://www.voorhoede.nl/nl/).
 ![image](https://github.com/rosahoffer/proof-of-concept/assets/112861375/2cb9bf04-9c7e-4c1f-9e50-b6e40f13370a)
