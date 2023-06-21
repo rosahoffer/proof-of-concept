@@ -15,11 +15,11 @@ Een blog-overzicht voor [De Voorhoede](https://www.voorhoede.nl/nl/).
 Maak kennis met het blog-overzicht van De Voorhoede: Vind waardevolle artikelen over technologie, design, ontwikkeling en meer. Met krachtige zoek- en filtersystemen kun je specifieke onderwerpen en favoriete auteurs vinden. Personaliseer je leeservaring door categorieën en auteurs te volgen die bij jouw interesses passen. Verken de diverse perspectieven en inzichten van het getalenteerde team van De Voorhoede.
 
 ## Gebruik
-* **De user stories waar ik aan heb gewerkt zijn:**
+**De user stories waar ik aan heb gewerkt zijn:**
 
-*Als gebruiker wil ik kunnen zoeken op een specifiek blogbericht.*
-*ALs gebruiker wil dat de zoekbalk automatisch suggesties geeft op de titel van een blog terwijl je typt.*
-*Als gebruiker wil ik kunnen filteren op blogberichten.*
+- *Als gebruiker wil ik kunnen zoeken op een specifiek blogbericht.*
+- *ALs gebruiker wil dat de zoekbalk automatisch suggesties geeft op de titel van een blog terwijl je typt.*
+- *Als gebruiker wil ik kunnen filteren op blogberichten.*
 
 ## Kenmerken
 Gebruik gemaakt van: HTML, CSS, JS, EJS, Express, Node, GraphQL en Cyclic.
