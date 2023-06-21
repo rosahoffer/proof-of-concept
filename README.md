@@ -14,9 +14,7 @@ Een blog overzicht voor [De Voorhoede](https://www.voorhoede.nl/nl/).
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Maak kennis met het blog-overzicht van De Voorhoede: Vind waardevolle artikelen over technologie, design, ontwikkeling en meer. Met krachtige zoek- en filtersystemen kun je specifieke onderwerpen en favoriete auteurs vinden. Personaliseer je leeservaring door categorieën en auteurs te volgen die bij jouw interesses passen. Verken de diverse perspectieven en inzichten van het getalenteerde team van De Voorhoede.
 
 ## Gebruik
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
