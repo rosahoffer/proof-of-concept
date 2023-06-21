@@ -340,7 +340,7 @@ header p{
   }
 
   .filter-contain{
-    padding: 1rem 8rem 3rem 8rem;
+    margin: 1rem 8rem 3rem 8rem;
   }
 
   .filter-contain-desktop{
@@ -368,7 +368,7 @@ header p{
   }
 
   .filter-contain{
-    padding: 1rem 15rem 3rem 15rem;
+    margin: 1rem 15rem 3rem 15rem;
   }
 
   .filter-contain-desktop{
