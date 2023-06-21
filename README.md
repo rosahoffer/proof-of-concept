@@ -22,7 +22,7 @@ Maak kennis met het blog-overzicht van De Voorhoede: Vind waardevolle artikelen 
 *Als gebruiker wil ik kunnen filteren op blogberichten.*
 
 ## Kenmerken
-Gebruik gemaakt van HTML, CSS, JS, EJS, Express, Node, GraphQL en Cyclic.
+Gebruik gemaakt van: HTML, CSS, JS, EJS, Express, Node, GraphQL en Cyclic.
 
 ## Installatie
 1. Klik op de groene knop "Code" (of "Code downloaden") om de repository-URL te kopiëren.
