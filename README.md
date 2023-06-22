@@ -36,6 +36,7 @@ Gebruik gemaakt van: HTML, CSS, JS, EJS, Express, Node, GraphQL en Cyclic.
 
 ## Bronnen
 Voor het stylen van een checkbox | https://moderncss.dev/pure-css-custom-checkbox-style/
+Voor het bouwen van een autocomplete | https://github.com/Sidstumple
 
 ## Licentie
 
