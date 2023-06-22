@@ -31,9 +31,9 @@ Gebruik gemaakt van: HTML, CSS, JS, EJS, Express, Node, GraphQL en Cyclic.
    
 3. Navigeer naar de gewenste locatie waar je de repository wilt installeren met behulp van het cd-commando.
    
-4. Gebruik het git clone-commando gevolgd door de gekopieerde repository-URL om de repository te klonen. Bijvoorbeeld: git clone <repository-URL>.
+4. Gebruik het git clone-commando gevolgd door de gekopieerde repository-URL om de repository te klonen.
    
-5. Ga naar de gekloonde repository met behulp van het cd-commando. Bijvoorbeeld: cd <repository-naam>.
+5. Ga naar de gekloonde repository met behulp van het cd-commando.
     
 6. Controleer of Node.js op je computer is geïnstalleerd door het uitvoeren van het commando node -v. Als Node.js niet is geïnstalleerd, volg dan de installatie-instructies voor je specifieke besturingssysteem op de officiële Node.js-website.
 
