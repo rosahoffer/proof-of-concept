@@ -18,7 +18,7 @@ Maak kennis met het blog-overzicht van De Voorhoede: Vind waardevolle artikelen 
 **De user stories waar ik aan heb gewerkt zijn:**
 
 - *Als gebruiker wil ik kunnen zoeken op een specifiek blogbericht.*
-- *ALs gebruiker wil dat de zoekbalk automatisch suggesties geeft op de titel van een blog terwijl je typt.*
+- *Als gebruiker wil dat de zoekbalk automatisch suggesties geeft op de titel van een blog terwijl ik typ.*
 - *Als gebruiker wil ik kunnen filteren op blogberichten.*
 
 ## Kenmerken
