@@ -33,6 +33,7 @@ Gebruik gemaakt van: HTML, CSS, JS, EJS, Express, Node, GraphQL en Cyclic.
 6. Controleer of Node.js op je computer is geïnstalleerd door het uitvoeren van het commando node -v. Als Node.js niet is geïnstalleerd, volg dan de installatie-instructies voor je specifieke besturingssysteem op de officiële Node.js-website.
 7. Installeer de vereiste Node.js-afhankelijkheden door het commando npm install uit te voeren in de repository-map. Dit zal de packages installeren die zijn gespecificeerd in het package.json-bestand.
 8. Pas indien nodig het .gitignore-bestand aan om bestanden en mappen uit te sluiten van versiebeheer.
+9. Open het .env-bestand in een teksteditor en voeg de benodigde configuratievariabelen toe.
 
 ## Bronnen
 Voor het stylen van een checkbox | https://moderncss.dev/pure-css-custom-checkbox-style/
