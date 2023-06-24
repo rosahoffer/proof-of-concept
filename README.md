@@ -46,6 +46,7 @@ Gebruik gemaakt van: HTML, CSS, JS, EJS, Express, Node, GraphQL en Cyclic.
 ## Zero State
 
 * Voor deze leertaak heb ik ook een deeltaak gekregen, genaamd: Zero State
+
 _Ben je benieuwd wat ik hier heb ontworpen? Klik dan [hier]([https://www.voorhoede.nl/nl/](https://github.com/rosahoffer/proof-of-concept-zero-state/wiki/Zero-States)) voor de documentatie._
 
 
