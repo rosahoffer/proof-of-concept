@@ -43,6 +43,12 @@ Gebruik gemaakt van: HTML, CSS, JS, EJS, Express, Node, GraphQL en Cyclic.
     
 9. Open het .env-bestand in een teksteditor en voeg de benodigde configuratievariabelen toe.
 
+## Zero State
+
+* Voor deze leertaak heb ik ook een deeltaak gekregen, genaamd: Zero State
+_Ben je benieuwd wat ik hier heb ontworpen? Klik dan [hier]([https://www.voorhoede.nl/nl/](https://github.com/rosahoffer/proof-of-concept-zero-state/wiki/Zero-States)) voor de documentatie._
+
+
 ## Bronnen
 Voor het stylen van een checkbox | https://moderncss.dev/pure-css-custom-checkbox-style/
 
